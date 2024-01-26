@@ -1,0 +1,926 @@
+/* COMMON CSS START  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+ul,ol{
+    list-style-type: none;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+/* COMMON CSS END  */
+
+/* NAVBAR CSS START  */
+#navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+.navbar-wrapper{
+    display: flex;
+}
+.logo{
+    width: 30%;
+    padding-top: 40px;
+}
+.nav-item{
+    width: 70%;
+}
+.nav-item ul{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.nav-item ul li a{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #ffffff;
+    margin-left: 30px;
+    transition: all linear 0.3s;
+}
+.nav-item ul li a:hover{
+    color: #c7b299;
+}
+/* NAVBAR CSS END  */
+
+/* BANNER CSS START  */
+#banner{
+    background: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 380px 0;
+    position: relative;
+    z-index: 1;
+}
+#banner:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+.banner-details{
+    text-align: center;
+}
+.banner-details h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    color: #ffffff;
+    padding-bottom: 16px;
+}
+.banner-details h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 52px;
+    font-weight: 800;
+    color: #ffffff;
+    padding-bottom: 20px;
+}
+.banner-details p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #ffffff;
+    width: 568px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+.banner-button button{
+    padding-top: 20px;
+    padding-left: 37px;
+    padding-bottom: 18px;
+    padding-right: 39px;
+    background: #998675;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0px 4px 1px 0px #736357;
+    cursor: pointer;
+}
+/* BANNER CSS END  */
+
+
+/* SERVICE CSS START  */
+#service{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.service-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.service-item{
+    text-align: center;
+    position: relative;
+
+}
+.service-icon i{
+    font-size: 47px;
+    padding-bottom: 30px;
+    color: #555555;
+    transition: all linear 0.3s;
+}
+.service-texts h3{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    color: #555555;
+    padding-bottom: 20px;
+    transition: all linear 0.3s;
+}
+.service-texts p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #8c8c8c;
+    padding-bottom: 30px;
+}
+.service-item:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    background: #f1eee9;
+    height: 3px;
+    width: 70px;
+    transform: translateX(-50%);
+    transition: all linear 0.3s;
+}
+.service-item:hover .service-icon i{
+    color: #c7b299;
+}
+.service-item:hover .service-texts h3{
+    color: #c7b299;
+}
+.service-item:hover:after{
+    background: #c7b299;
+}
+/* SERVICE CSS END  */
+
+
+/* IDEA-PART CSS START  */
+#idea-part{
+    padding-top: 83px;
+    background: #fbfaf8;
+}
+.common-title{
+    text-align: center;
+}
+.common-title h3{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    color: #555555;
+    padding-bottom: 30px;
+}
+.common-title p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #8c8c8c;
+    width: 760px;
+    margin: 0 auto;
+    line-height: 28px;
+}
+.idea-img picture img{
+    padding-top: 40px;
+    width: 100%;
+    display: block;
+}
+.idea-bottom{
+    background: linear-gradient(to right,#211b19,#4e3427);
+    padding: 50px 0;
+}
+.idea-button button{
+    padding: 20px 28px;
+    background: #998675;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0px 4px 1px 0px #736357;
+    cursor: pointer;
+}
+.idea-left h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    color: #ffffff;
+}
+.idea-left h3 span{
+    font-family: 'Raleway', sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    color: #c7b299;
+}
+.idea-left p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #615855;
+}
+.idea-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+/* IDEA-PART CSS END  */
+
+
+
+/* PROJECT PART CSS START  */
+#project{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.common-title p{
+    padding-bottom: 40px;
+}
+.project-button a{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    border: 1px solid #ebebeb;
+    color: #8c8c8c;
+    border-radius: 3px;
+    padding: 10px 25px;
+    margin-right: 10px;
+    transition: all linear 0.3s;
+    margin-bottom: 40px;
+}
+.project-button :last-child{
+    margin-right: 0;
+}
+.project-button a:hover{
+    color: #ffffff;
+    background: #998675;
+}
+.project-image img{
+    display: block;
+}
+.project-text{
+    background: #fbfaf8;
+    padding: 30px 0px 27px 30px;
+    position: relative;
+    transition: all linear 0.3s;
+}
+.project-text h4{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #c7b299;
+}
+.project-text p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #d1d1d1;
+}
+.project-gallery-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+.project-gallery-wrapper2{
+    display: flex;
+    justify-content: space-between;
+}
+.project-text::after{
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 20px;
+    width: 30px;
+    height: 30px;
+    background: #fbfaf8;
+    transform: rotate(45deg);
+    transition: all linear 0.3s;
+}
+.project-image{
+    position: relative;
+    overflow: hidden;
+}
+.project-img-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: all linear 0.3s;
+}
+.project-img-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+}
+.project-img-icon a{
+    color: #ffffff;
+    font-size: 24px;
+}
+.project-img-icon .project-icon1 a i{
+    transition: all linear 0.3s;
+}
+.project-img-icon .project-icon2 a i{
+    transition: all linear 0.3s;
+}
+.project-item:hover .project-img-overlay{
+    width: 100%;
+    opacity: 1;
+}
+.project-icon1{
+    margin-right: 30px;
+}
+.project-icon1:hover a i{
+    color: #c7b299;
+} 
+.project-icon2:hover a i{
+    color: #c7b299;
+}
+.project-item:hover .project-text{
+    background: #362f2d;
+}
+.project-item:hover .project-text::after{
+    background: #362f2d;
+}
+.project-item:hover .project-text h4{
+    color: #ffffff;
+}
+.project-item:hover .project-text p{
+    color: #c7b299;
+}
+.project-bottom-button{
+    text-align: center;
+    padding-top: 40px;
+}
+.project-bottom-button button{
+    padding-top: 20px;
+    padding-left: 44px;
+    padding-bottom: 19px;
+    padding-right: 46px;
+    background: #998675;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0px 4px 1px 0px #736357;
+    cursor: pointer;
+}
+/* PROJECT PART CSS END  */
+
+
+
+/* PRESENTATION PART CSS START  */
+#presentation{
+    background: url(../images/video.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 210px;
+    padding-bottom: 258px;
+    position: relative;
+    z-index: 999;
+}
+.presentation-details{
+    text-align: center;
+}
+.presentation-text h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    color: #ffffff;
+    padding-bottom: 30px;
+    padding-top: 43px;
+}
+.presentation-text p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #ffffff;
+    width: 555px;
+    margin: 0 auto;
+}
+.presentation-icon{
+    width: 100px;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.presentation-icon a i{
+    font-size: 70px;
+    line-height: 100px;
+    color: #ffffff;
+}
+#presentation:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+/* PRESENTATION PART CSS END  */
+
+
+/* PHONE PART CSS START  */
+#phone-part{
+    padding-top: 80px;
+    background: #fbfaf8;
+}
+.phone-part-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.phone-image{
+    padding-left: 47px;
+    padding-right: 25px;
+}
+.phone-image img{
+    display: block;
+}
+.phone-texts{
+    padding-top: 195px;
+}
+.phone-texts h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: #555555;
+    padding-bottom: 40px;
+}
+.phone-texts p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #8c8c8c;
+    line-height: 28px;
+    padding-bottom: 40px;
+}
+.phone-texts-icon i{
+    font-size: 21px;
+    color: #c7b299;
+    display: block;
+    padding-left: 56px;
+    padding-bottom: 12px;
+}
+.phone-texts2{
+    display: flex;
+}
+.phone-texts2 p span{
+    display: block;
+    line-height: 32px;
+}
+.arrow-icons{
+    margin-left: 55px;
+}
+.phone-texts2 p{
+    margin-left: 30px;
+}
+/* PHONE PART CSS END  */
+
+
+/* COUNTER PART CSS START  */
+#counter{
+    padding-top: 69px;
+    padding-bottom: 60px;
+    background: linear-gradient(to right,#211b19,#4e3427);
+}
+.counter-item{
+    text-align: center;
+    position: relative;
+}
+.counter-item i{
+    font-size: 45px;
+    color: #c7b299;
+    padding-bottom: 30px;
+}
+.counter-item h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-weight: 200;
+    color: #ffffff;
+    padding-bottom: 21px;
+}
+.counter-item p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #c7b299;
+    text-transform: uppercase;
+}
+.counter-item-wrapper{
+    display: flex;
+    justify-content: space-around;
+}
+.counter-item::after{
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    height: 2px;
+    width: 30px;
+    background: #ffffff;
+    transform: translateX(-50%);
+}
+/* COUNTER PART CSS END  */
+
+
+/* POST PART CSS START  */
+#recent-posts{
+    padding-top: 82px;
+}
+.recent-item{
+    width: 370px;
+    border: 1px solid #f8f8f8;
+    margin-bottom: 40px;
+}
+.recent-item-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.recent-images img{
+    display: block;
+    width: 100%;
+}
+.recent-image-details{
+    padding: 30px 0px 27px 28px;
+    transition: all linear 0.3s;
+}
+.recent-image-details h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #555555;
+    padding-bottom: 20px;
+    transition: all linear 0.3s;
+}
+.recent-image-details p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #8c8c8c;
+    line-height: 22px;
+    padding-bottom: 27px;
+    transition: all linear 0.3s;
+}
+.recent-images{
+    position: relative;
+}
+.calender{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+}
+.calender .date p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    color: #ffffff;
+    padding: 9px 12px;
+    background: #363636;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    transition: all linear 0.3s;
+}
+.calender .month p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #ffffff;
+    padding: 7px 13px 6px 14px;
+    background: #252525;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    transition: all linear 0.3s;
+}
+.recent-image-details a{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #c7b299;
+}
+.recent-image-details i{
+    padding-left: 10px;
+    color: #c7b299;
+}
+.recent-images::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: all linear 0.3s;
+}
+.recent-item:hover .recent-images::after{
+    opacity: 1;
+}
+.recent-item:hover .calender .date p{
+    background: #c7b299;
+}
+.recent-item:hover .calender .month p{
+    background: #a48d72;
+}
+.recent-item:hover .recent-image-details{
+    background: #362f2d;
+}
+.recent-item:hover .recent-image-details h3{
+    color: #c7b299;
+}
+.recent-item:hover .recent-image-details p{
+    color: #ffffff;
+}
+.recent-part-slider-icon{
+    text-align: center;
+    padding-bottom: 80px;
+}
+.recent-part-slider-icon a{
+    font-size: 21px;
+    color: #d2d2d2;
+    transition: all linear 0.3s;
+}
+.recent-part-slider-icon a:hover {
+    color: #c9b49c;
+}
+.recent-part-slider-icon a{
+    margin-right: 8px;
+}
+.recent-part-slider-icon a:last-child{
+    margin-right: 0;
+}
+/* POST PART CSS END  */
+
+
+
+/* PARTNERS PART CSS END  */
+#partners{
+    background: url(../images/multi\ logo\ banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 139px 0px;
+    position: relative;
+    z-index: 999;
+}
+.partners-logo-wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#partners::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+/* PARTNERS PART CSS END  */
+
+
+/* FOOTER PART CSS START  */
+#footer-part{
+    padding-top: 80px;
+    background: #191919;
+}
+.footer-item-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+.footer-item{
+    width: 23%;
+}
+.footer-item-logo-part img{
+    padding-bottom: 30px;
+}
+.footer-item-logo-part p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #555555;
+    line-height: 24px;
+    padding-bottom: 30px;
+}
+.footer-item-logo-part a{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #d1d1d1;
+}
+.footer-item-logo-part i{
+    padding-left: 10px;
+    color: #d1d1d1;
+}
+.footer-item-recent-post h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    padding-bottom: 30px;
+    padding-top: 28px;
+}
+.footer-item-recent-post span{
+    display: block;
+}
+.footer-recent-post-text1{
+    position: relative;
+}
+.footer-recent-post-text1:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 270px;
+    background: #252525;
+}
+.footer-recent-post-text2{
+    position: relative;
+}
+.footer-recent-post-text2:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 270px;
+    background: #252525;
+}
+.footer-item-recent-post p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    color: #363636;
+    margin-bottom: 20px;
+    transition: all linear 0.3s;
+}
+.footer-item-recent-post p span{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #555555;
+    padding-top: 11px;
+    padding-bottom: 20px;
+    transition: all linear 0.3s;
+}
+.footer-recent-post-text1:hover p{
+    color: #ffffff;
+}
+.footer-recent-post-text1:hover p span{
+    color: #c7b299;
+}
+.footer-recent-post-text2:hover p{
+    color: #ffffff;
+}
+.footer-recent-post-text2:hover p span{
+    color: #c7b299;
+}
+.footer-recent-post-text3:hover p{
+    color: #ffffff;
+}
+.footer-recent-post-text3:hover p span{
+    color: #c7b299;
+}
+.footer-item-twitter h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    padding-bottom: 30px;
+    padding-top: 28px;
+}
+.footer-item-twitter p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #555555;
+    line-height: 20px;
+}
+.footer-item-twitter p a{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #00bff3;
+    display: inline;
+}
+.footer-item-twitter h6{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    color: #363636;
+    padding-top: 9px;
+    padding-bottom: 20px;
+}
+.footer-twitter-line1{
+    position: relative;
+}
+.footer-twitter-line1:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 270px;
+    background: #252525;
+}
+.footer-twitter-line2{
+    position: relative;
+    margin-top: 19px;
+}
+.footer-twitter-line2:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 270px;
+    background: #252525;
+}
+.footer-twitter-line3{
+    margin-top: 19px;
+}
+.footer-twitter-line3 p a{
+    color: #959595;
+}
+.footer-item-dribbble h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    padding-bottom: 30px;
+    padding-top: 28px;
+}
+.footer-item-dribbble img{
+    display: block;
+}
+.dribbble-photos1{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.dribbble-photos2{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-bottom{
+    padding-top: 47px;
+    padding-bottom: 57px;
+    background: #000;
+}
+.footer-bottom p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    color: #555555;
+    width: 400px;
+}
+.copyright-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.copyright-wrapper a{
+    margin-right: 12px;
+    color: #959595;
+}
+.copyright span{
+    color: #c7b299;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+.design{
+    text-align: end;
+}
+/* FOOTER PART CSS END  */
